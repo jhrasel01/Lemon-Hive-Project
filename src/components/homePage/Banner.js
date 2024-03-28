@@ -31,15 +31,25 @@ export default function Banner() {
               {/* left */}
               <div className="tab:col-span-2">
                 {/* heading */}
-                <div className="relative z-10 pr-5">
+                <div className="relative z-10 pr-5 text-right">
+                  <div className="relative inline-block z-10">
+                    <H1
+                      name="React"
+                      className="text-secondary-color inline-block"
+                    />
+                    {/* head */}
+                    <span className="absolute -top-14 -left-14">
+                      <Image
+                        alt={headIcon}
+                        src={headIcon}
+                        className="w-20 h-auto"
+                      />
+                    </span>
+                  </div>
                   <H1
-                    name="React Conference"
+                    name="Conference"
                     className="text-secondary-color text-right"
                   />
-                  {/* head */}
-                  <span className="absolute -top-14 right-[45%] tab:right-[30%] laptop:right-[37%]">
-                    <Image alt={headIcon} src={headIcon} />
-                  </span>
                 </div>
 
                 {/* content */}

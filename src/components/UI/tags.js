@@ -50,7 +50,9 @@ export const H4 = ({ name, className }) => {
 export const H5 = ({ name, className }) => {
   return (
     <>
-      <h5 className={`text-lg font-normal ${className}`}>{name}</h5>
+      <h5 className={`text-sm laptop:text-lg font-normal ${className}`}>
+        {name}
+      </h5>
     </>
   );
 };
@@ -59,7 +61,10 @@ export const H5 = ({ name, className }) => {
 export const H6 = ({ name, className, ...props }) => {
   return (
     <>
-      <h6 className={`text-base font-normal ${className}`} {...props}>
+      <h6
+        className={`text-sm laptop:text-base font-normal ${className}`}
+        {...props}
+      >
         {name}
       </h6>
     </>
