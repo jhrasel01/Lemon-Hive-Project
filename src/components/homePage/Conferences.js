@@ -57,7 +57,6 @@ export default function Conferences() {
     return currentDate < conferenceDate;
   };
 
-  if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
 
   return (
