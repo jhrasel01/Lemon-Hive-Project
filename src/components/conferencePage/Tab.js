@@ -17,16 +17,6 @@ const Tab = ({ tabs, onTabOrderChange }) => {
         },
       });
     }
-
-    if (mobileTabsContainerRef.current) {
-      Sortable.create(mobileTabsContainerRef.current, {
-        animation: 200,
-        onEnd: (event) => {
-          const { oldIndex, newIndex } = event;
-          onTabOrderChange(oldIndex, newIndex);
-        },
-      });
-    }
   }, [onTabOrderChange]);
 
   const [activeTab, setActiveTab] = useState(0);
@@ -60,7 +50,7 @@ const Tab = ({ tabs, onTabOrderChange }) => {
       </div>
 
       {/* mobile */}
-      <div className="laptop:hidden mt-10" ref={mobileTabsContainerRef}>
+      <div className="laptop:hidden mt-10">
         {tabs.map((tab, index) => (
           <div key={index} className="mb-8">
             <div

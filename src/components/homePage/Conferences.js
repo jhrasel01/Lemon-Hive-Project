@@ -222,7 +222,7 @@ export default function Conferences() {
                     </div>
 
                     {/* right */}
-                    <div className="">
+                    <div className="w-full">
                       <CustomLink href={`/conference/${conference.id}`}>
                         <div className="mt-3">
                           <P
