@@ -92,7 +92,7 @@ export default function Conference({ slagId }) {
 
   return (
     <>
-      <section className="mt-40 my-16 laptop:my-20">
+      <section className="mt-40 laptop:mt-[200px] my-16 laptop:my-20">
         <Container>
           {/* content */}
           <div className="">
